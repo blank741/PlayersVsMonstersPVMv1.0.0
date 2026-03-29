@@ -20,12 +20,12 @@ void end() {
 
 int all_start() {
 	cout << endl;
-	cout << "                 欢迎来到PVM！                             " << endl;
-	cout << "           本游戏作者Ethan！由CG工作室出品！               " << endl;
-	cout << "  适度游戏益脑，沉迷游戏伤身。认准正版游戏，抵制垃圾游戏！ " << endl;
-	cout << "               CG工作室蒸蒸日上！                          " << endl;
+	cout << "                 欢迎来到PVM！" << endl;
+	cout << "           本游戏作者Ethan！由CG工作室出品！" << endl;
+	cout << "  适度游戏益脑，沉迷游戏伤身。认准正版游戏，抵制垃圾游戏！" << endl;
+	cout << "               CG工作室蒸蒸日上！" << endl;
 	for (int i = 0; i < 5; i++) cf5();
-	cout << "            1）登录  2）注册  3）退出                      " << endl;
+	cout << "    1）登录Log in  2）注册Register  3）退出Quit" << endl;
 	char key;
 	key = _getch();
 	if (key == '1') {
@@ -43,3 +43,22 @@ int all_start() {
 	}
 }	//刚启动时的登录界面输出
 
+int panel() {
+	cout << "                 欢迎来到\"Players VS Monsters\"  " << endl
+		<< "              游戏面板               (L)Language              " << endl
+		<< "1）开始战斗  2）游戏商城  3）保存进度  4）个人中心  5）退出游戏" << endl;
+	char temp;
+	temp = _getch();
+	if (temp == '1')
+		return 1;
+	else if (temp == '2')
+		return 2;
+	else if (temp == '3')
+		return 3;
+	else if (temp == '4')
+		return 4;
+	else if (temp == '5')
+		return 5;
+	else if (temp == 'l')
+		return -1;
+}	//登录后的游戏主面板

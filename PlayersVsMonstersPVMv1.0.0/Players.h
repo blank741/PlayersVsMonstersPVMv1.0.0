@@ -67,7 +67,7 @@ public:
 		b:Password.clear();
 		i = 0;
 		system("cls");
-		cout << "请输入密码（最少8位，最多16位）：";
+		cout << "请输入密码(Password)（最少8位，最多16位）：";
 		while (i < maxLength) {
 			char ch = _getch();  // 使用_getch()读取字符，但不显示在屏幕上
 			if (ch == '\r') {  // 如果按下回车键，则结束输入
@@ -89,7 +89,7 @@ public:
 		Password += '\0';
 		a.clear();
 		i = 0;
-		cout << endl << "请确认密码：";
+		cout << endl << "请确认密码(Password again)：";
 		while (i < maxLength) {
 			char ch = _getch();  // 使用_getch()读取字符，但不显示在屏幕上
 			if (ch == '\r') {  // 如果按下回车键，则结束输入
@@ -124,11 +124,11 @@ public:
 		}
 		else {
 			system("cls"); //清屏
-			cout << endl << "确认密码错误，请重新输入！" << endl;
+			cout << endl << "确认密码错误(Wrong)，请重新输入(Again)！" << endl;
 			goto b; //为了方便，使用跳转
 		}
 		system("cls");
-		cout << "请输入昵称：";
+		cout << "请输入昵称(Your name)：";
 		string Name;
 		getline(cin, Name);
 		name = Name;
@@ -162,7 +162,7 @@ public:
 			}
 			else {
 				system("cls");
-				cout << "无此UID！请重新输入！" << endl;
+				cout << "无此UID(Not Found)！请重新输入(Again)！" << endl;
 				Get(1, 0); //递归，重新获取UID
 			}
 		}
@@ -175,7 +175,7 @@ public:
 				getline(file, line);
 			}
 			password = line;
-			cout << "请输入密码：";
+			cout << "请输入密码(Password)：";
 			while (true) {
 				char ch = _getch();  // 使用_getch()读取字符，但不显示在屏幕上
 				if (ch == '\r') {  // 如果按下回车键，则结束输入
@@ -196,7 +196,7 @@ public:
 			if (password == Password) return;
 			else {
 				system("cls");
-				cout << "密码错误，请重新输入！" << endl;
+				cout << "密码错误(Wrong)，请重新输入(Again)！" << endl;
 				Get(2, a); //递归，重新输入密码
 			}
 		}

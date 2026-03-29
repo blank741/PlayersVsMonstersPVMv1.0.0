@@ -32,5 +32,26 @@ int main() {
     else {
         a.Get(1, 0);
     }
+	system("cls");
+    int* temp = new int;
+    *temp = panel();
+    if (*temp == 1) {
+
+    }
+    else if (*temp == 2) {
+
+    }
+	else if (*temp == 3) {
+    }
+    else if (*temp == 4) {
+    }
+    else if (*temp == 5) {
+        system("cls");
+		end();
+    }
+    else {
+
+    }
+    delete temp;
     return 0;
 }
