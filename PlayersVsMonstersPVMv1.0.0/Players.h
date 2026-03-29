@@ -22,18 +22,18 @@ public:
 	const void SetMoney(long long money) {
 		this->money = money;
 	}
-	const long long Money() const {
+	const long long GetMoney() const {
 		return money;
 	} //程序获取金币数量
-	const string Name() {
+	const string GetName() {
 		return name;
 	} //程序获取昵称
 
-	const string Password() const{
+	const string GetPassword() const{
 		return password;
 	} //程序获取密码
 
-	const string Num() const{
+	const string GetNum() const{
 		return num;
 	} //程序获取UID
 
